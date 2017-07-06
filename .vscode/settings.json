@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+  "editor.formatOnSave": true,
+  "prettier.semi": false,
+  "tslint.enable": true,
+  "prettier.jsonEnable": [],
+  "prettier.trailingComma": "all"
+}
