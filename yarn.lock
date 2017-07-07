@@ -1010,6 +1010,10 @@ redent@^1.0.0:
     indent-string "^2.1.0"
     strip-indent "^1.0.1"
 
+redux-mobx-connect@1.0.0-beta.2:
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/redux-mobx-connect/-/redux-mobx-connect-1.0.0-beta.2.tgz#1dd8af90f0883e8139bc6ce8fcc354884599ba59"
+
 redux@*:
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.1.tgz#bfc535c757d3849562ead0af18ac52122cd7268e"
