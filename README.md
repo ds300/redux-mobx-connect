@@ -66,7 +66,7 @@ const VisibleTodoList = connect(
       render() {
         const todos = getVisibleTodos(store.state.todos, store.state.visibilityFilter)
         return (
-          <VisibleTodosList todos={todos} onTodoClick={this.onTodoClick} />
+          <TodoList todos={todos} onTodoClick={this.onTodoClick} />
         )
       }
     },
