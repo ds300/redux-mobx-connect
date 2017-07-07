@@ -1,6 +1,6 @@
 # redux-mobx-connect
 
-    yarn add redux-mobx-connect
+    yarn add redux-mobx-connect@next
 
 ## A simple alternative to react-redux
 
