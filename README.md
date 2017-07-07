@@ -1,4 +1,4 @@
-# redux-mobx-connector
+# redux-mobx-connect
 
     yarn add redux-mobx-connect
 
