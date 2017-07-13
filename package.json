@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/jest": "^20.0.2",
     "@types/react": "^15.0.34",
-    "@types/react-test-renderer": "^15.6.1",
+    "@types/react-test-renderer": "15.5.1",
     "@types/redux": "^3.6.0",
     "jest": "^20.0.4",
     "mobx": "^3.1.16",
@@ -49,5 +49,8 @@
     "index.d.ts",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "resolutions": {
+    "react-test-renderer": "15.5.1"
+  }
 }
