@@ -73,6 +73,10 @@ const VisibleTodoList = connect(
 )
 ```
 
+## Usage
+
+`Provider` takes a single prop, `store` which should be the redux store. Wrap your app in this, just like for react-redux.
+
 `connect` takes a function which is passed a reactive store object, and can return either a stateless functional component or a es6 component class. So you write your connected components just like your
 regular compoents, except wrapped in a lexical context where they have access to your redux store.
 
@@ -101,11 +105,16 @@ const VisibleTodoList = connect(
 Doing it the bad way means you lose the reactivity goodness that MobX
 sets up for you, and state changes won't be propagated from store to component.
 
-Since it is built on MobX you can
+## Advanced Usage
+
+Use `makeConnect` to create a project-specific version of connect so you don't need to
+specify the types of your store state and actions everywhere.
+
+Since redux-mobx-connect is built on MobX you can
 even use `@observable` and `@computed` properties in your connected components to
 manage component local state and memoize expensive derived state. No more reselect!
 
-This is brand new so will be beta for a short while.
+This is being used in production by [Futurice](https://futurice.com)
 
 ## License
 
