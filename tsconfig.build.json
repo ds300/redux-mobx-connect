@@ -18,11 +18,10 @@
     "noUnusedParameters": true,
     "experimentalDecorators": true,
     "downlevelIteration": true,
-    "noEmit": true,
     "inlineSources": true
   },
-  "exclude": [
-    "node_modules"
+  "include": [
+    "index.tsx"
   ],
   "compileOnSave": true
 }

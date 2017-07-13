@@ -7,8 +7,19 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc -p tsconfig.build.json",
     "prepublish": "yarn build"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
   },
   "peerDependencies": {
     "mobx": ">=3",
@@ -17,13 +28,18 @@
     "redux": ">=3"
   },
   "devDependencies": {
+    "@types/jest": "^20.0.2",
     "@types/react": "^15.0.34",
+    "@types/react-test-renderer": "^15.6.1",
     "@types/redux": "^3.6.0",
+    "jest": "^20.0.4",
     "mobx": "^3.1.16",
     "mobx-react": "^4.2.2",
     "np": "^2.16.0",
     "prettier": "^1.5.2",
-    "react": "^15.6.1",
+    "react": "16.0.0-alpha.12",
+    "react-test-renderer": "16.0.0-alpha.12",
+    "ts-jest": "^20.0.7",
     "tslint": "^5.4.3",
     "typescript": "^2.4.1"
   },

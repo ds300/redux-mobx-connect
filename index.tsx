@@ -1,6 +1,6 @@
 import * as React from "react"
 import { observable } from "mobx"
-import { observer } from "mobx-react"
+import { observer } from "mobx-react/custom"
 
 import { Store, Unsubscribe } from "redux"
 
@@ -32,6 +32,10 @@ export class Provider extends React.PureComponent<{
     this.unsubscribe = nextProps.store.subscribe(() => {
       this.observableStore.state = nextProps.store.getState()
     })
+  }
+
+  componentWillUnmount() {
+    this.unsubscribe()
   }
 
   getChildContext() {
