@@ -18,7 +18,7 @@ import {connect} from "react-redux"
 
 const ConnectedComponent = connect(
   null,
-  (dispach, {id}) => ({onPress: () => dispatch(somethingHappened(id))})
+  (dispatch, {id}) => ({onPress: () => dispatch(somethingHappened(id))})
 )(Component)
 ```
 
@@ -78,10 +78,10 @@ const VisibleTodoList = connect(
 `Provider` takes a single prop, `store` which should be the redux store. Wrap your app in this, just like for react-redux.
 
 `connect` takes a function which is passed a reactive store object, and can return either a stateless functional component or a es6 component class. So you write your connected components just like your
-regular compoents, except wrapped in a lexical context where they have access to your redux store.
+regular components, except wrapped in a lexical context where they have access to your redux store.
 
 Yes it really is that simple. The only real gotcha is that you can't destructure the store
-outside of the of the inner class or functional component.
+outside of the inner class or functional component.
 
 e.g.
 
